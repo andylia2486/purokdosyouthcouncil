@@ -46,7 +46,9 @@ a:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
 .unit .role{font-size:.85rem;color:var(--muted)}
 .unit .vacant{color:var(--muted);font-style:italic}
 .tabs{display:flex;flex-wrap:wrap;gap:8px}
-.tabs span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:.9rem}
+.tabs span,.tabs a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:.9rem;color:inherit;text-decoration:none}
+.tabs a{border-color:var(--accent);color:var(--accent);font-weight:600}
+.tabs a:hover,.tabs a:focus-visible{background:var(--accent);color:var(--on-accent)}
 footer{margin-top:48px;padding:24px 0 32px;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:.95rem}
 @media (max-width:600px){
  header.hero{padding:32px 0 28px;background:linear-gradient(115deg,#001a4d 0 70%,#005aff 70% 82%,#00a3e0 82% 88%,#001a4d 88%)}
@@ -55,7 +57,7 @@ footer{margin-top:48px;padding:24px 0 32px;border-top:1px solid var(--line);colo
  section{padding-top:32px}
  .letter{padding:18px 16px}
  h2{font-size:1.25rem}
- .tabs span{font-size:.85rem;padding:5px 12px}
+ .tabs span,.tabs a{font-size:.85rem;padding:5px 12px}
 }
 @media (min-width:1000px){.letter{padding:30px 34px}.unit{padding:22px 24px}}
 </style>
@@ -134,7 +136,7 @@ footer{margin-top:48px;padding:24px 0 32px;border-top:1px solid var(--line);colo
   <section>
     <h2>Sheet Sections</h2>
     <div class="tabs">
-      <span>Landing Page</span><span>Consolidated Directory</span><span>MOTM</span><span>Deliverables</span>
+      <span>Landing Page</span><a href="https://andylia2486.github.io/consolidateddirectory/" target="_blank" rel="noopener">Consolidated Directory</a><span>MOTM</span><span>Deliverables</span>
       <span>Council Projects</span><span>Memorandum/Resolution</span><span>Letters</span><span>Attendance Tracker</span>
     </div>
   </section>
